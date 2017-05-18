@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cfd7be2-9544-4c21-8fc8-0eae0b2a4909" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
-    </list>
+    <list default="true" id="0cfd7be2-9544-4c21-8fc8-0eae0b2a4909" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +19,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,7 +31,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#182#183#0" expanded="false" />
+                <element signature="e#209#210#0" expanded="false" />
+                <element signature="e#249#250#0" expanded="false" />
+                <element signature="e#281#282#0" expanded="false" />
+                <element signature="e#316#317#0" expanded="false" />
+                <element signature="e#347#348#0" expanded="false" />
+                <element signature="e#395#396#0" expanded="false" />
+                <element signature="e#435#436#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,7 +50,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#256#257#0" expanded="false" />
+                <element signature="e#281#282#0" expanded="false" />
+                <element signature="e#318#319#0" expanded="false" />
+                <element signature="e#346#347#0" expanded="false" />
+                <element signature="e#379#380#0" expanded="false" />
+                <element signature="e#408#409#0" expanded="false" />
+                <element signature="e#452#453#0" expanded="false" />
+                <element signature="e#488#489#0" expanded="false" />
+                <element signature="e#520#521#0" expanded="false" />
+                <element signature="e#548#549#0" expanded="false" />
+                <element signature="e#590#591#0" expanded="false" />
+                <element signature="e#624#625#0" expanded="false" />
+                <element signature="e#654#655#0" expanded="false" />
+                <element signature="e#680#681#0" expanded="false" />
+                <element signature="e#718#719#0" expanded="false" />
+                <element signature="e#748#749#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +77,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1047,12 +1074,12 @@
       <updated>1495095432605</updated>
       <workItem from="1495095437271" duration="2402000" />
       <workItem from="1495103287026" duration="39000" />
-      <workItem from="1495103402090" duration="997000" />
+      <workItem from="1495103402090" duration="1591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3438000" />
+    <option name="totallyTimeSpent" value="4032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="0" width="1382" height="744" extended-state="1" />
@@ -1197,7 +1224,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,7 +1234,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#182#183#0" expanded="false" />
+            <element signature="e#209#210#0" expanded="false" />
+            <element signature="e#249#250#0" expanded="false" />
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#316#317#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,7 +1251,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#256#257#0" expanded="false" />
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#318#319#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#548#549#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#654#655#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#718#719#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1221,7 +1276,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

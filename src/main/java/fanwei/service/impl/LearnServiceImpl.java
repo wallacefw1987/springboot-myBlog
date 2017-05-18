@@ -1,15 +1,15 @@
 package fanwei.service.impl;
 
-import com.fanwei.dao.LearnDao;
-import com.fanwei.pojo.LearnResource;
-import com.fanwei.service.LearnService;
-import com.fanwei.tools.Page;
+
+import fanwei.dao.LearnDao;
+import fanwei.pojo.LearnResource;
+import fanwei.service.LearnService;
+import fanwei.tools.Page;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.Map;
 
 /**

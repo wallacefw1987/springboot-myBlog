@@ -1,9 +1,9 @@
 package fanwei.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.fanwei.service.LearnService;
-import com.fanwei.tools.Page;
-import com.fanwei.tools.ServletUtil;
+import fanwei.service.LearnService;
+import fanwei.tools.Page;
+import fanwei.tools.ServletUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

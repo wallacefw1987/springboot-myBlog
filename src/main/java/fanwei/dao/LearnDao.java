@@ -1,8 +1,8 @@
 package fanwei.dao;
 
-import com.fanwei.pojo.LearnResource;
-import com.fanwei.tools.Page;
 
+import fanwei.pojo.LearnResource;
+import fanwei.tools.Page;
 import java.util.Map;
 
 /**

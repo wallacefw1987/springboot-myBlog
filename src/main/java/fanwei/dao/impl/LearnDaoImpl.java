@@ -1,9 +1,10 @@
 package fanwei.dao.impl;
 
-import com.fanwei.dao.LearnDao;
-import com.fanwei.pojo.LearnResource;
-import com.fanwei.tools.Page;
-import com.fanwei.tools.StringUtil;
+
+import fanwei.dao.LearnDao;
+import fanwei.pojo.LearnResource;
+import fanwei.tools.Page;
+import fanwei.tools.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -53,26 +53,26 @@ public class LearnController {
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public void addLearn(HttpServletRequest request,HttpServletResponse response){
-        JSONObject object = new JSONObject();
+        JSONObject result = new JSONObject();
         String author = request.getParameter("author");
         String title = request.getParameter("title");
         String url = request.getParameter("url");
         if (StringUtil.isNull(author)){
-            object.put("message","作者不能为空!");
-            object.put("flag",false);
-            ServletUtil.createSuccessResponse(200,object,response);
+            result.put("message","作者不能为空!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
             return;
         }
         if (StringUtil.isNull(title)){
-            object.put("message","标题不能为空!!");
-            object.put("flag",false);
-            ServletUtil.createSuccessResponse(200,object,response);
+            result.put("message","标题不能为空!!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
             return;
         }
         if (StringUtil.isNull(url)){
-            object.put("message","url不能为空!!!");
-            object.put("flag",false);
-            ServletUtil.createSuccessResponse(200,object,response);
+            result.put("message","url不能为空!!!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
             return;
         }
         LearnResource resource = new LearnResource();
@@ -83,11 +83,12 @@ public class LearnController {
         Integer index = learnServiceImpl.add(resource);
         System.out.println("index is :"+index);
         if (index > 0){
-            object.put("message","添加成功");
-            object.put("flag",true);
+            result.put("message","添加成功");
+            result.put("flag",true);
         }else {
-            object.put("message","添加失败");
-            object.put("flag",false);
+            result.put("message","添加失败");
+            result.put("flag",false);
         }
+        ServletUtil.createSuccessResponse(200,result,response);
     }
 }

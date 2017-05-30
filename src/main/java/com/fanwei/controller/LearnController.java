@@ -35,6 +35,11 @@ public class LearnController {
         return "learn-resource";
     }
 
+    /**
+     * 分页展示
+     * @param request
+     * @param response
+     */
     @RequestMapping(value = "/queryLeanList",method = RequestMethod.POST)
     @ResponseBody
     public void queryLeanList(HttpServletRequest request, HttpServletResponse response){
@@ -51,6 +56,11 @@ public class LearnController {
         ServletUtil.createSuccessResponse(200,jo,response);
     }
 
+    /**
+     * 添加教程
+     * @param request
+     * @param response
+     */
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public void addLearn(HttpServletRequest request,HttpServletResponse response){
         JSONObject result = new JSONObject();
@@ -87,6 +97,72 @@ public class LearnController {
             result.put("flag",true);
         }else {
             result.put("message","添加失败");
+            result.put("flag",false);
+        }
+        ServletUtil.createSuccessResponse(200,result,response);
+    }
+
+    /**
+     * 修改教程
+     * @param request
+     * @param response
+     */
+    @RequestMapping(value = "/update",method = RequestMethod.POST)
+    public void updateLearn(HttpServletRequest request,HttpServletResponse response){
+        JSONObject result = new JSONObject();
+        String id = request.getParameter("id");
+        String author = request.getParameter("author");
+        String title = request.getParameter("title");
+        String url = request.getParameter("url");
+        LearnResource resource = learnServiceImpl.queryLearnResourceById(Integer.valueOf(id));
+        if (StringUtil.isNull(author)){
+            result.put("message","作者不能为空!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
+            return;
+        }
+        if (StringUtil.isNull(title)){
+            result.put("message","标题不能为空!!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
+            return;
+        }
+        if (StringUtil.isNull(url)){
+            result.put("message","url不能为空!!!");
+            result.put("flag",false);
+            ServletUtil.createSuccessResponse(200,result,response);
+            return;
+        }
+        resource.setAuthor(author);
+        resource.setTitle(title);
+        resource.setUrl(url);
+        int index = learnServiceImpl.update(resource);
+        if (index>0){
+            result.put("message","教程信息修改成功");
+            result.put("flag",true);
+        }else {
+            result.put("message","教程信息修改失败");
+            result.put("flag",false);
+        }
+        ServletUtil.createSuccessResponse(200,result,response);
+    }
+
+    /**
+     * 删除教程
+     * @param request
+     * @param response
+     */
+    @RequestMapping(value = "/delete",method = RequestMethod.POST)
+    public void deleteLearn(HttpServletRequest request,HttpServletResponse response){
+        JSONObject result = new JSONObject();
+        String ids = request.getParameter("ids");
+        System.out.println("-------- ids="+ids);
+        int index = learnServiceImpl.deleteByIds(ids);
+        if (index>0){
+            result.put("message","教程信息删除成功");
+            result.put("flag",true);
+        }else {
+            result.put("message","教程信息删除失败");
             result.put("flag",false);
         }
         ServletUtil.createSuccessResponse(200,result,response);
